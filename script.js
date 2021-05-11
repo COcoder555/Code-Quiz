@@ -9,6 +9,8 @@ var question2 = "What syntax do we use to declare an Object"
 var question3 = "What syntax do we use to declare an Array"
 var question4 = "Sting values should be stored within____ when assigned to a variable"
 var question5 = "Only____ can be stored localy"
+var Answer1 =
+var Anser 
 
 START.addEventListener("click",fucnction(){
 

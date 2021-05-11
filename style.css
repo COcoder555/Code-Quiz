@@ -20,7 +20,7 @@ color:rgb(56, 216, 56);
     width: 80vh;
     display: flex;
     justify-content: center;
-    font-size: 8vh;
+    font-size: 3vh;
     background-color: black;
     }
 
@@ -28,9 +28,23 @@ color:rgb(56, 216, 56);
     margin-top: 10vh;
     display: flex;    
     justify-content: center;
+    
    }
 
 .btn{
+    display: flex;
     color:rgb(16, 218, 16);
     text-decoration: none;
+    justify-content: center;
+}
+
+.Question{
+ display: flex;
+ justify-content: center;
+ font-size: 6vh;
+}
+
+.Answer{
+    display: flex;
+    justify-content: center;
 }
