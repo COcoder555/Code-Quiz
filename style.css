@@ -20,7 +20,6 @@ color:rgb(56, 216, 56);
     width: 80vh;
     display: flex;
     justify-content: center;
-    font-size: 3vh;
     background-color: black;
     }
 
@@ -36,6 +35,7 @@ color:rgb(56, 216, 56);
     color:rgb(16, 218, 16);
     text-decoration: none;
     justify-content: center;
+    font-size: 4vh;
 }
 
 .Question{
@@ -44,7 +44,8 @@ color:rgb(56, 216, 56);
  font-size: 6vh;
 }
 
-.Answer{
+.A{
     display: flex;
     justify-content: center;
 }
+
