@@ -13,7 +13,7 @@
 var questions = ["What is a Boolean?", "What syntax do we use to store an Object?", "What syntax do we use to store an Array?", 
 "What do we use to store a String?","Only____ can be stored localy"]
 
-var answers = [["A function", "A syntax error","a binary variable, having two possible values called “true” and “false”",
+var answers = [["A Function", "A syntax error","a binary variable, having two possible values called “true” and “false”",
 "A programming language","A measurment of processing speed"],["{", "[",";","#","$"],["$","[",";","#","}"],["Quotation Marks","<>","Parenthesis","{}","[]"],
 ["number","Loops","functions","Strings","HTML"]]
 var $btn1 = document.createElement("button"); 
@@ -27,7 +27,7 @@ var div = document.getElementById("Answer1");
 
 var $START = document.getElementById("START")
 var timeEl = document.getElementById("timer");
-var secondsLeft = 500;
+var secondsLeft = 200;
 var timerInterval;
 function setTime() {
      timerInterval = setInterval( function(){
@@ -56,42 +56,35 @@ function checkAns(event) {
     } else if($Question.textContent==="What is a Boolean?" &&  element.textContent !=="a binary variable, having two possible values called “true” and “false”"){
         // Elses minus time 
         secondsLeft -= 20;
-        nextQuestion();
-        
 
     }
     
    if($Question.textContent==="What syntax do we use to store an Object?" && element.textContent==="{"){
         nextQuestion();
      
-
     } else if($Question.textContent==="What syntax do we use to store an Object?" &&  element.textContent !=="{"){
-        // secondsLeft-=20;
-        // nextQuestion();
-       
+        secondsLeft-=20;
+        
     } 
     if($Question.textContent==="What syntax do we use to store an Array?" && element.textContent==="["){
         nextQuestion();
     
-
     } else if($Question.textContent==="What syntax do we use to store an Array?" &&  element.textContent !=="["){
-        // nextQuestion();
-        // secondsLeft-=20; 
+        
+        secondsLeft-=20; 
     } 
     if($Question.textContent==="What do we use to store a String?" && element.textContent==="Quotation Marks"){
         nextQuestion();
         
-
     } else if($Question.textContent==="What do we use to store a String?" &&  element.textContent !=="Quotation Marks"){
-        // nextQuestion();
-        // secondsLeft -=20;
+        
+        secondsLeft -=20;
     }
     if($Question.textContent==="Only____ can be stored localy" && element.textContent==="Strings"){
         ENDGAME();
         
-
     } else if($Question.textContent==="Only____ can be stored localy" &&  element.textContent !=="Strings"){
-        // secondsLeft-=20;
+        secondsLeft-=20;
     }
 
 };

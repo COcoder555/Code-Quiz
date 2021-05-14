@@ -32,7 +32,11 @@ color:rgb(56, 216, 56);
     display: flex;    
     justify-content: center;
     
-   }
+}
+
+.btn:active{
+    color:rgb(26, 206, 26);
+}
 
 /* button{
     display: block;
