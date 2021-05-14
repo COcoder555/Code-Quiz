@@ -30,7 +30,7 @@ color:rgb(56, 216, 56);
     
    }
 
-.btn{
+button{
     display: flex;
     color:rgb(16, 218, 16);
     text-decoration: none;
