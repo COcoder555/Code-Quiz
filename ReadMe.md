@@ -29,3 +29,7 @@
 
 * I created a "nextQuestion" function that I placed in the if statments that changes the question if the user answers the question correctly. 
 * I created a "END GAME" function that ends the game once all the Quiz is complete, promts the user for thier initials, and stores thier initials and thier scores. 
+
+[Code Quiz](https://cocoder555.github.io/Code-Quiz/)
+![./assets.CodeQuizLanding.png]
+![./assets.CodeQuizGame]
