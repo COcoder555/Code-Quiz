@@ -1,11 +1,15 @@
 
-
+// Created a array to store the questions to be presented in the quiz
 var questions = ["What is a Boolean?", "What syntax do we use to store an Object?", "What syntax do we use to store an Array?", 
 "What do we use to store a String?","Only____ can be stored localy"]
 
+// Created an array'within arrays to store the possible answers for each question
+ 
 var answers = [["A Function", "A syntax error","a binary variable, having two possible values called “true” and “false”",
 "A programming language","A measurment of processing speed"],["{", "[",";","#","$"],["$","[",";","#","}"],["Quotation Marks","<>","Parenthesis","{}","[]"],
 ["number","Loops","functions","Strings","HTML"]]
+
+//  Created buttons using createElement and stored them into corrisponding btn variables
 var $btn1 = document.createElement("button"); 
 var $btn2 = document.createElement("button");
 var $btn3 = document.createElement("button"); 
@@ -15,9 +19,13 @@ var $btn5 = document.createElement("button");
 var btnM = [$btn1, $btn2, $btn3, $btn4, $btn5];
 var div = document.getElementById("Answer1");
 
+// Grabbed the START and TIMER ID's and stored them in variables
 var $START = document.getElementById("START")
 var timeEl = document.getElementById("timer");
+//  Set the secondsLeft to 200
 var secondsLeft = 200;
+
+// Created a timer fuction
 var timerInterval;
 function setTime() {
      timerInterval = setInterval( function(){
@@ -32,9 +40,11 @@ function setTime() {
 };
 setTime()
 
-
+// Grabbed the question ID and stored it a variable
 var $Question = document.querySelector("#Question");
 
+// Created a function to verify if the correct answer is selected if so it moves to the next question
+//  if not to deduct time form the timer
 var index = 0
 function checkAns(event) {
     var element = event.target 
@@ -79,6 +89,8 @@ function checkAns(event) {
 
 };
 
+// Created a function to display the next question in the questions array and display the possible answers
+// Also added event listeners that would check the answers using the checkAns function previoulsy created
 function nextQuestion() { $Question.textContent = questions[index]
     console.log(index)
     div.append($btn1, $btn2, $btn3, $btn4, $btn5)
@@ -96,6 +108,7 @@ btnM[4].addEventListener("click",checkAns)
     index++
 };
 nextQuestion();
+// Created an end game function that ends the game, stores time left in local storage, prompts user for initials, then displays the High Scores
 var score 
 var data = localStorage.getItem("High-Score")
 var scoreList 
