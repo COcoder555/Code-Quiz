@@ -31,5 +31,5 @@
 * I created a "END GAME" function that ends the game once all the Quiz is complete, promts the user for thier initials, and stores thier initials and thier scores. 
 
 [Code Quiz](https://cocoder555.github.io/Code-Quiz/)
-![./assets.CQL.png]
-![./assets.CQG.png]
+![./assets/CQL.png]
+![./assets/CQG.png]
